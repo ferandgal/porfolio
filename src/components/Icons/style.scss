@@ -1,0 +1,36 @@
+.techIcons{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+
+    .react{
+        width: 175px;
+        height: 125px;
+        padding: 15px;
+    }
+
+    .angular{
+        width: 125px;
+        height: 125px;
+        padding: 15px;
+    }
+
+    .git{
+        width: 225px;
+        height: 110px;
+        padding: 15px;
+    }
+    .mongo{
+        width: 150px;
+        height: 150px;
+        padding: 15px;
+    }
+}
+
+.hobbies{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: left;
+}

@@ -1,0 +1,89 @@
+---
+import MainHead from "../components/MainHead.astro";
+import Footer from "../components/Footer/index.jsx";
+import Nav from "../components/Nav/index.jsx";
+import Icons from "../components/Icons/index.jsx";
+import Video from "../components/Icons/index.jsx";
+---
+
+<html lang="en">
+	<head>
+		<MainHead title="About | Jeanine White" description="About Jeanine White Lorem Ipsum" />
+		<style lang="scss">
+			.heroImg {
+				max-height: 24rem;
+				object-fit: cover;
+				overflow: hidden;
+
+				img {
+					width: 100%;
+				}
+			}
+
+			.bio {
+				font-size: var(--f-u1);
+				line-height: 2;
+			}
+		</style>
+	</head>
+	<body>
+		<Nav />
+		<div class="wrapper">
+			<h1>About Fernando Andrés</h1>
+			<div class="heroImg">
+				<img
+					src="https://64.media.tumblr.com/eddc665e9902546112da2a7da63bd58d/9df34fd3d12367cd-c3/s1280x1920/98ea8f1369f94c0365c52714cf8353c81f714dc1.jpg"
+				/>
+			</div>
+			<div class="bio wrapper wrapper__readable mt8">
+				<h2>Little biography</h2>
+				<p>
+					I'm 22 years old, I was born in Cádiz and I,ve studied in Seville. I started to inquire into
+					the programming world high school in the informatic subject whit my first programm in <em>C++</em>.
+					Afterwards I studied Software Engienieering but it wasn't enough so I decided to self learning at the
+					same time and it was when I met Miguel Ángel Durán (midudev) a web programmer which
+					share his knowledge in social media and who encourage me to have more inquisitivness on
+					keep learning about this wonderful world.
+				</p>
+				<h2>Technologies</h2>
+				<p>
+					The technologies I feel more confortable whit are:
+					<Icons></Icons>
+				</p>
+				<h2>Experience</h2>
+				<p>
+					As well as I was improving my skills I realised that I've learn a lot in the Software degree, mainly
+					soft skills and work team since as I made several projects in group as you can check in the <a href="/projects">Projects</a> section.
+					Furthermore I've been working in <a href="https://www.arima.eu/es/" target="_blank">Arima Software</a> for 3 months in a practice contract where I could
+					put into practice all the knowledge I've been acquiring all these years.
+
+				</p>
+				<h2>Self description</h2>
+				<p>
+					I consider myself a versatile person whit the hability of adjustment on differents envirments.
+					A talkative person who distinguish when to listen and when to speak in order to learning and teaching.
+					I am very commited with my task and I won't give up on an easy way. Therefore I organize my time as the 
+					most prouctive manner.
+					For getting done I can provide pleasasnt atmosphere with my sens of humor.
+				</p>
+
+				<h2>Hobbies</h2>
+				<section class="hobbies">
+				<p id="hobbies">
+					I love Formula 1 and everything related with cars and motorsport nad also I play padel on my
+					spare time.
+					You will be wondering why I referenced that I'm a magician, well I won't disappoint you so you
+					will be able to check out by yourself with the next video. I hope you enjoy!
+
+					<div style="width: 40vw;
+					height: 20vw;
+					background-color: cornflowerblue;
+					border: solid;
+					border-radius: 15px; opacity:0.6;"></div>
+				</p>
+				</section>
+			</div>
+		</div>
+		<Footer />
+	</body>
+</html>

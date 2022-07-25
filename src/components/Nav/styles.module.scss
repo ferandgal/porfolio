@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap');
+
+.nav {
+	display: flex;
+	align-items: center;
+	padding-top: 1rem;
+	padding-right: 2rem;
+	padding-bottom: 1rem;
+	padding-left: 2rem;
+	background: linear-gradient(90deg, rgba(0,105,108,1) 0%, rgba(17,163,182,1) 35%, rgba(25,150,208,0.7637648809523809) 71%, rgba(244,119,148,1) 100%);;
+}
+
+.logolink {
+	display: block;
+	color: var(--t-fg);
+	text-decoration: none;
+}
+
+.link {
+	color: var(--t-black);
+	opacity: 0.8;
+	display: block;
+	margin-left: 1rem;
+	text-decoration: none;
+	font-family: 'Roboto Mono';
+	font-size: 1.25rem;
+	font-weight: 600;
+	text-transform: uppercase;
+	padding-top: 0.75em;
+	padding-bottom: 0.75em;
+
+	&:focus,
+	&:hover {
+		opacity: 1;
+		color: #ddf;
+		transform: scale(1.05);
+		transition: all 0.3s ease;
+	}
+}
+
+.monogram {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 2.2em;
+	height: 2.2em;
+	margin-right: 0.5rem;
+	color: var(--c-black);
+	font-weight: 700;
+	letter-spacing: -0.100rem;
+	border: 3px solid currentColor;
+	border-radius: 50%;
+}
+
+.social {
+	display: block;
+	margin-left: auto;
+
+	+ .social {
+		margin-left: 0.75rem;
+	}
+}
+
+.socialiconTwitter {
+	display: block;
+	width: 1.75rem;
+	height: 1.75rem;
+	fill: var(--t-active);
+	opacity: 0.8;
+	transition: fill linear 150ms;
+
+	&:hover {
+		fill: var(--t-active);
+		opacity: 1;
+		transform: scale(1.05);
+		transition: all linear 150ms;
+	}
+}
+
+.socialiconGithub {
+	display: block;
+	width: 1.75rem;
+	height: 1.75rem;
+	fill: black;
+	opacity: 0.8;
+	transition: fill linear 150ms;
+
+	&:hover {
+		opacity: 1;
+		transform: scale(1.05);
+		fill: black;
+		transition: all linear 150ms;
+	}
+}
+
+.socialiconEmail {
+	display: block;
+	width: 1.75rem;
+	height: 1.75rem;
+	fill: black;
+	opacity: 0.8;
+	transition: fill linear 150ms;
+
+	&:hover {
+		opacity: 1;
+		transform: scale(1.05);
+		fill: black;
+		transition: all linear 150ms;
+	}
+}
+
+.socialiconLinkedin {
+	display: block;
+	width: 1.75rem;
+	height: 1.75rem;
+	fill: #0077b5;
+	opacity: 0.8;
+	transition: fill linear 150ms;
+
+	&:hover {
+		opacity: 1;
+		transform: scale(1.05);
+		fill: #0077b5;
+		transition: all linear 150ms;
+	}
+}

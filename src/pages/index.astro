@@ -1,0 +1,137 @@
+---
+// Component Imports
+import MainHead from "../components/MainHead.astro";
+import Button from "../components/Button/index.jsx";
+import Nav from "../components/Nav/index.jsx";
+import Footer from "../components/Footer/index.jsx";
+import PortfolioPreview from "../components/PortfolioPreview/index.jsx";
+import Overlay from '../components/Overlay/overlay.jsx';
+
+// Data Fetching: List all Markdown posts in the repo.
+const projects = await Astro.glob("./project/**/*.md");
+const featuredProject = projects[0];
+
+// Full Astro Component Syntax:
+// https://docs.astro.build/core-concepts/astro-components/
+---
+
+<html lang="en">
+	<head>
+		<MainHead
+			title="Fernando Andrés: Personal Site"
+			description="Fernando Andrés: FullStack Developer, Speaker, and Magician..."
+		/>
+		<style lang="scss">
+			$w-s: 750px;
+
+			.hero {
+				position: relative;
+				overflow: hidden;
+
+				@media (min-width: $w-s) {
+					height: 45vw;
+				}
+			}
+
+			.img {
+				display: block;
+				width: 100%;
+				height: auto;
+			}
+
+			.gradient,
+			.gradient2 {
+				background-image: url("data:image/jpeg;base64,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");
+				background-size: cover;
+				pointer-events: none;
+				mix-blend-mode: screen;
+				width: 100%;
+				height: 100%;
+				position: absolute;
+				top: 0;
+				left: 0;
+				z-index: 2;
+				opacity: 0.6;
+			}
+
+			.gradient2 {
+				mix-blend-mode: multiply;
+				background-size: cover;
+			}
+
+			.grid {
+				display: grid;
+				grid-gap: 2rem;
+
+				@media (min-width: 1200px) {
+					grid-template-columns: 2fr 1fr;
+				}
+			}
+
+			.sectionTitle {
+				font-weight: 700;
+				font-size: var(--f-u8);
+				margin-top: 4rem;
+				margin-bottom: 2rem;
+			}
+
+			.bio {
+				line-height: 2;
+				margin-bottom: 2rem;
+
+				> span:first-of-type {
+					line-height: 1;
+					margin-bottom: 0.5em;
+					display: block;
+					font-weight: 800;
+					color: cornflowerblue;
+					font-size: var(--f-u4);
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<Nav />
+		<header class="hero">
+			<img
+				width="1600"
+				height="1131"
+				class="img"
+				src="https://media.theobjective.com/app/uploads/2022/04/065928/contactophoto-0630576093-1-1.jpg"
+				srcset="https://media.theobjective.com/app/uploads/2022/04/065928/contactophoto-0630576093-1-1.jpg 2400w"
+				sizes="(max-width: 800px) 800px, (max-width: 1200px) 1200px, (max-width: 1600px) 1600px, (max-width: 2400px) 2400px, 1200px"
+			/>
+			<div class="gradient"></div>
+			<div class="gradient2"></div>
+			<Overlay></Overlay>
+		</header>
+		<main class="wrapper mt4 mb4">
+			<div class="grid">
+				<div class="section">
+					<h3 class="sectionTitle">Selected Work</h3>
+					<PortfolioPreview project={featuredProject} />
+					<div class="tac mt4">
+						<a href="/projects">
+							<Button>View All</Button>
+						</a>
+					</div>
+				</div>
+				<div class="section">
+					<h3 class="sectionTitle">About me</h3>
+					<p class="bio">
+						<span>The FullStack Developer you are looking for...</span> I'm a talkative guy who is always searching new
+						ways of learning and improving my develop skills. I have studied Software Engenieering at <em>Universidad de Sevilla</em>.
+						I would stand out about myself my ability to speak in public, my commitment and provide good atmosphere.
+					</p>
+					<p>
+						<a href="/about">Read more</a>
+					</p>
+				</div>
+			</div>
+		</main>
+		<Footer />
+		<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+			<path fill="#0F9CD1" fill-opacity="1" d="M0,96L48,80C96,64,192,32,288,58.7C384,85,480,171,576,176C672,181,768,107,864,69.3C960,32,1056,32,1152,42.7C1248,53,1344,75,1392,85.3L1440,96L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
+		</svg>
+	</body>
+</html>
