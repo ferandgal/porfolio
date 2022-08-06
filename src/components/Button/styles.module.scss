@@ -1,7 +1,14 @@
 .button {
 	display: inline-block;
-	border: 3px solid currentColor;
+	border: 3px solid;
 	padding: 0.5em 1em;
 	font-weight: 700;
 	text-transform: uppercase;
+	color: rgb(203, 142, 200);
+
+	&:hover{
+		color: rgb(254, 169, 217);
+		transform: scale(1.05);
+		transition: all 0.5s ease;
+	}
 }

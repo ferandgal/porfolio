@@ -14,7 +14,7 @@ tags:
 
 ---
 This project was made in 2022 while I was studying Software Engineering at Universidad de Sevilla. The goal
-of this was learning how to work in a considerable group (11 people) and making use og soft skills and the whole thing learned during those years. The project lasted 3 months.
+of this was learning how to work in a considerable group (11 people) and making use of soft skills and the whole things learned during those years. The project lasted 3 months.
 
 We develop this using SCRUM methodology for the organization, making daily meetings, retrospective and sprints. Furthermore for the version control of the code GitHub was our preference.
 

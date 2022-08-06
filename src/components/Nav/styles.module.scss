@@ -2,12 +2,15 @@
 
 .nav {
 	display: flex;
+	position: -webkit-sticky;
+	top: 0;
+	z-index: 10;
 	align-items: center;
 	padding-top: 1rem;
 	padding-right: 2rem;
 	padding-bottom: 1rem;
 	padding-left: 2rem;
-	background: linear-gradient(90deg, rgba(0,105,108,1) 0%, rgba(17,163,182,1) 35%, rgba(25,150,208,0.7637648809523809) 71%, rgba(244,119,148,1) 100%);;
+	background: linear-gradient(90deg, rgba(0,105,108,1) 5%, rgba(17,163,182,1) 35%, rgba(25,150,208,0.7637648809523809) 71%, rgba(244,119,148,1) 100%);
 }
 
 .logolink {
