@@ -9,7 +9,7 @@ import Overlay from '../components/Overlay/overlay.jsx';
 
 // Data Fetching: List all Markdown posts in the repo.
 const projects = await Astro.glob("./project/**/*.md");
-const featuredProject = projects[0];
+const featuredProject = projects[1];
 
 // Full Astro Component Syntax:
 // https://docs.astro.build/core-concepts/astro-components/
@@ -29,7 +29,7 @@ const featuredProject = projects[0];
 				overflow: hidden;
 
 				@media (min-width: $w-s) {
-					height: 45vw;
+					height: 35vw;
 				}
 			}
 

@@ -10,7 +10,7 @@
 	padding-right: 2rem;
 	padding-bottom: 1rem;
 	padding-left: 2rem;
-	background: linear-gradient(90deg, rgba(0,105,108,1) 5%, rgba(17,163,182,1) 35%, rgba(25,150,208,0.7637648809523809) 71%, rgba(244,119,148,1) 100%);
+	background: linear-gradient(90deg, rgba(136,167,208,1) 20%, rgba(227,191,133,1) 60%, rgba(195,95,94,1) 100%);
 }
 
 .logolink {
@@ -35,9 +35,9 @@
 	&:focus,
 	&:hover {
 		opacity: 1;
-		color: #ddf;
-		transform: scale(1.05);
+		color: #fafafa;
 		transition: all 0.3s ease;
+		text-decoration: overline;
 	}
 }
 
@@ -66,8 +66,7 @@
 
 .socialiconTwitter {
 	display: block;
-	width: 1.75rem;
-	height: 1.75rem;
+	width: 2rem;
 	fill: var(--t-active);
 	opacity: 0.8;
 	transition: fill linear 150ms;
@@ -75,15 +74,14 @@
 	&:hover {
 		fill: var(--t-active);
 		opacity: 1;
-		transform: scale(1.05);
+		transform: scale(1.1);
 		transition: all linear 150ms;
 	}
 }
 
 .socialiconGithub {
 	display: block;
-	width: 1.75rem;
-	height: 1.75rem;
+	width: 2rem;
 	fill: black;
 	opacity: 0.8;
 	transition: fill linear 150ms;
@@ -98,8 +96,7 @@
 
 .socialiconEmail {
 	display: block;
-	width: 1.75rem;
-	height: 1.75rem;
+	width: 2rem;
 	fill: black;
 	opacity: 0.8;
 	transition: fill linear 150ms;
@@ -114,8 +111,8 @@
 
 .socialiconLinkedin {
 	display: block;
-	width: 1.75rem;
-	height: 1.75rem;
+	width: 2rem;
+	height: 2rem;
 	fill: #0077b5;
 	opacity: 0.8;
 	transition: fill linear 150ms;

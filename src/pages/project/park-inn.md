@@ -4,7 +4,7 @@ title: Park-Inn
 uri: 'https://landin-page-parkinnapp.netlify.app'
 client: Self
 publishDate: 2022-06-01 00:00:00
-img: ../../public/assets/parkinn.png
+img: https://www.ocu.org/-/media/ocu/images/home/coches/coches/parking/parkings_estrechos_tama%C3%B1os_2_1600x900.jpg?rev=b2ffb68c-1616-4c4b-8835-1d32ec43f669&hash=BF4F6FFE8D1D22DF6D96C3D961A81450
 description: |
   Park-Inn is an app for finding on an quickly, cheap and secure way a site where to park your car.
 tags:

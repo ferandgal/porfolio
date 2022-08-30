@@ -15,8 +15,12 @@
 	justify-content: center;
 	margin: 0;
 	color: #001932;
+	background: -webkit-linear-gradient(0deg, rgba(195,95,94,1) 0%, rgba(227,191,133,1) 50%, rgba(136,167,208,1) 81%);
+  	-webkit-background-clip: text;
+	background-clip: text;
+ 	-webkit-text-fill-color: transparent;
 	flex-direction: column;
-	font-size: 3.75em;
+	font-size: 4.5em;
 	font-weight: 900;
 	text-transform: uppercase;
 	letter-spacing: 0.08rem;
@@ -46,7 +50,7 @@
 	justify-content: center;
 	color: var(--t-bg);
 	font-size: var(--f-u2);
-	font-weight: 700;
+	font-weight: 300;
 	background: rgba(0, 0, 0, 0.25);
 	opacity: 0;
 	text-decoration: none;

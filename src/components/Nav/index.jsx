@@ -1,4 +1,5 @@
 import Styles from './styles.module.scss';
+import 'astro/jsx-runtime';
 
 function Nav() {
 	return (

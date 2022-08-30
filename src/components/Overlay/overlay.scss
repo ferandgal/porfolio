@@ -68,9 +68,8 @@
     height: 100%;
     top: 0;
     left: 0;
-    pointer-events: none;
     clip-path: polygon(0% 100%, 100% 100%, 100% 200%, 0% 200%);
-    transition: clip-path cubic-bezier(0.4, 0, 0.5, 1) 150ms;
+    transition: clip-path cubic-bezier(0.4, 0, 0.5, 1) 200ms;
 }
 
 .desc {
@@ -125,6 +124,12 @@
 
             &:not(:hover){
                 transition: transform 0.5s ease;
+            }
+
+            @media (max-width: 650px) {
+                width: 150px;
+                position: relative;
+                margin-bottom: 0.5rem;
             }
         }
     }
