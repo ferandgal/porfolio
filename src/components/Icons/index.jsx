@@ -1,4 +1,3 @@
-import {FaReact, FaBeer} from 'react-icons';
 import React from 'react';
 import './style.scss';
 
